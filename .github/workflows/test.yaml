@@ -11,8 +11,16 @@ jobs:
         run: |
           node -v
           npm -v
-      - name: Python Command2
+      - name: python2
         run: |
           import platform
           print(platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-2019
+    steps:
+      - name: Dir Powershell
+        run: Get-Location
+      - name: Dir Bash
+        run: pwd
+        shell: bash
