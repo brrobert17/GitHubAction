@@ -24,3 +24,5 @@ jobs:
       - name: Dir Bash
         run: pwd
         shell: bash
+      - name: java ver
+        run: java -v
