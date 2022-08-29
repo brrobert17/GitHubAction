@@ -25,4 +25,4 @@ jobs:
         run: pwd
         shell: bash
       - name: java ver
-        run: java -v
+        run: java -version
